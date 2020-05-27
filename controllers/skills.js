@@ -32,6 +32,7 @@ function edit(req, res, next) {
 }
 
 function update(req, res, next) {
+    req.body.aqcuired == !!req.body.aqcuired;
     skillsDB.update(req.params.id, req.body);
     res.redirect(`/skills/${req.params.id}`);
 }
