@@ -6,9 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h3><%= skill.skill %></h3>
-    <h3>Complete: <%= skill.acquired ? 'Yes' : 'No' %></h3>
-    <br><a href="/skills/<%= skill.id %>/edit">Edit Skill</a>
-    <br><br><a href=".">Go back</a>
+    <h1>Add a New Skill</h1>
+    <form action="/skills" method="POST" autocomplete="off">
+        <input type="text" name="skill">
+        <button type="submit">Save</button>
+    </form>
 </body>
 </html>
